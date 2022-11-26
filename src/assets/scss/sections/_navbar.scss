@@ -1,5 +1,7 @@
 @use '../custom' as *;
 
+$time : 0.3s;
+
 .navbar-section {
 
   .navbar-light .navbar-toggler {
@@ -8,12 +10,17 @@
 
   .nav-link {
     font-size: $base-font-size;
-    text-transform: uppercase;
+    color: $primary;
+    // text-transform: uppercase;
     font-weight: $base-font-weight;
+    letter-spacing: 1px;
 
     &:hover {
-      color: $gray-900;
+      color: $secondary;
     }
+
+    -webkit-transition: $time ease;
+    transition: $time ease;
   }
 
   .fa {
@@ -25,69 +32,46 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  // @media only screen and (max-width: 992px) {
-  //   span {
-  //     margin-left: 0.7rem;
-  //   }
-  // }
+  @media only screen and (max-width: 992px) {
+    .nav-logo-wide {
+      display: none;
+    }
 
-  .search {
-    padding-right: 10px;
+    .nav-logo-small {
+      display: block;
+    }
   }
 
-  .searchBox {
+  @media only screen and (min-width: 992px) {
+    .nav-logo-wide {
+      display: block;
+    }
+
+    .nav-logo-small {
+      display: none;
+    }
+  }
+
+  .nav-item {
+    display: inline-block;
     position: relative;
-    // top: 50% 10px;
+    color: #0087ca;
   }
 
-  .searchBox:hover>.searchButton {
-    color: $gray-900;
-    transition: 0.4s;
-  }
-
-  .searchButton {
-    color: inherit;
-    border: none;
-    background: none;
-  }
-
-  .searchInput {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: $gray-900;
-    font-size: 0.7rem;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-
-    &:focus {
-      width: 10rem;
-    }
-
-  }
-
-
-  .commentLine {
+  .nav-item::after {
+    content: '';
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 1px;
-    background-color: $gray-900;
     transform: scaleX(0);
-    animation: commentLineScaleIn 0.2s 0.1s forwards;
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background-color: $secondary;
+    transition: transform $time ease-out;
   }
 
-  @keyframes commentLineScaleIn {
-    0% {
-      transform: scaleX(0);
-    }
-
-    100% {
-      transform: scaleX(1);
-    }
+  .nav-item:hover::after {
+    transform: scaleX(1);
   }
 
 }

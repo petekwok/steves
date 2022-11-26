@@ -1,0 +1,17 @@
+@use '../custom' as *;
+
+.footer-section {
+
+  .copyright {
+    font-size: $font-size-sm;
+    font-weight: $base-font-weight;
+    color: $gray-600;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    font-size: $base-font-size;
+    color: $gray-600;
+  }
+
+}

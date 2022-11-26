@@ -4,10 +4,10 @@ import { Path } from './AppRoutes';
 
 const Navbar: React.FC<{}> = () => {
   const navLinks = [
-    ['About', Path.about],
     ['Menu', Path.menu],
-    ['Location', Path.location],
     ['Click & Collect', Path.clickCollect],
+    ['Location', Path.location],
+    ['About', Path.about],
   ].filter((a) => a);
   return (
     <div className="navbar-section">
@@ -15,14 +15,6 @@ const Navbar: React.FC<{}> = () => {
         <div className="container-fluid">
           <div className="row">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand" href="/">
-                <img
-                  src={require('../images/logo.svg').default}
-                  className="logo_div"
-                  width="140"
-                  alt="steves"
-                />
-              </a>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -35,17 +27,41 @@ const Navbar: React.FC<{}> = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                className="collapse navbar-collapse justify-content-end"
+                className="collapse navbar-collapse justify-content-center"
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav mr-auto d-flex align-items-center">
+                <ul className="navbar-nav mr-auto d-flex align-items-center justify-content-center">
+                  <li className="nav-logo-small" key={'logo'}>
+                    <a href="/">
+                      <img
+                        src={require('../images/logo.svg').default}
+                        className="logo_div"
+                        width="140"
+                        alt="skillojo"
+                      />
+                    </a>
+                  </li>
                   {navLinks.map(([text, linkTo], idx) => {
                     return (
-                      <li className="nav-item" key={idx}>
-                        <Link className="nav-link" to={linkTo}>
-                          {text}
-                        </Link>
-                      </li>
+                      <>
+                        {idx === navLinks.length / 2 && (
+                          <li className="nav-logo-wide mx-2" key={'logo'}>
+                            <a href="/">
+                              <img
+                                src={require('../images/logo.svg').default}
+                                className="logo_div"
+                                width="140"
+                                alt="skillojo"
+                              />
+                            </a>
+                          </li>
+                        )}
+                        <li className="nav-item mx-2" key={idx}>
+                          <Link className="nav-link" to={linkTo}>
+                            {text}
+                          </Link>
+                        </li>
+                      </>
                     );
                   })}
                 </ul>
