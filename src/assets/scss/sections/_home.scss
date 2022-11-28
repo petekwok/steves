@@ -1,3 +1,41 @@
 @use '../custom' as *;
 
-.home-section {}
+.home-section {
+  color: #feffff;
+  font-family: "Open Sans Condensed";
+
+  .home-banner-content {
+    @media only screen and (min-width: 240px) {
+      height: 28rem;
+    }
+  }
+
+  h1,
+  h2 {
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .img-fluid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // h1 {
+  //   @media only screen and (min-width: 240px) and (max-width: 568px) {
+  //     h1 {
+  //       font-size: 2em;
+  //       line-height: 2;
+  //     }
+  //   }
+  // }
+
+  // .intro-text {
+  //   font: bold 25px/25px 'Open Sans Condensed', serif;
+  //   text-transform: uppercase;
+  //   text-shadow: rgb(0 0 0 / 80%) 0 0 20px;
+  // }
+}

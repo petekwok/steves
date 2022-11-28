@@ -56,8 +56,8 @@ const Footer: React.FC<{}> = () => {
           </div>
           <div className="col-lg-12 text-center copyright">
             <p>
-              © {new Date().getFullYear()}-{new Date().getFullYear() + 1} Steves
-              Fish and Chips. All Rights Reserved
+              © {new Date().getFullYear()}-{new Date().getFullYear() + 1}{' '}
+              Steve's Fish and Chips. All Rights Reserved
             </p>
           </div>
         </div>

@@ -17,6 +17,6 @@ $font-size-sm-head: $font-size-sm*1.15;
 // define menu nav toggler variables
 $light: #fbfbfb;
 $navbar-toggler-focus-width: 0;
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' enable-background='new 0 0 512 512' viewBox='0 0 512 512'><line x1='26.7' x2='486.25' y1='105.643' y2='105.643' fill='none' stroke='#{$body-color}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/><line x1='26.7' x2='486.25' y1='256.511' y2='256.511' fill='none' stroke='#{$body-color}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/><line x1='26.7' x2='486.25' y1='407.312' y2='407.312' fill='none' stroke='#{$body-color}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/></svg>");
-
+// $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' enable-background='new 0 0 512 512' viewBox='0 0 512 512'><line x1='26.7' x2='486.25' y1='105.643' y2='105.643' fill='none' stroke='#{$red}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/><line x1='26.7' x2='486.25' y1='256.511' y2='256.511' fill='none' stroke='#{$red}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/><line x1='26.7' x2='486.25' y1='407.312' y2='407.312' fill='none' stroke='#{$red}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='2.613' stroke-width='13.417'/></svg>");
+@import "~@fontsource/open-sans-condensed/700.css";
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

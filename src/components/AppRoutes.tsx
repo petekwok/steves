@@ -3,10 +3,10 @@ import Home from '../pages/Home';
 
 export const Path = {
   home: '/home',
-  about: '/about',
   menu: '/menu',
-  location: '/location',
   clickCollect: '/clickCollect',
+  location: '/location',
+  about: '/about',
 };
 const AppRoutes: React.FC<{}> = () => {
   return (

@@ -16,9 +16,17 @@ const Navbar: React.FC<{}> = () => {
       <header className="header-nav border-bottom">
         <div className="container-fluid">
           <div className="row">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="/" className="d-flex justify-content-center">
+              <img
+                src={require('../images/logo.svg').default}
+                className="logo_div nav-logo-small"
+                width="140"
+                alt="steves"
+              />
+            </a>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
               <button
-                className="navbar-toggler"
+                className="navbar-toggler collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -26,23 +34,16 @@ const Navbar: React.FC<{}> = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <span className="toggler-icon top-bar"></span>
+                <span className="toggler-icon middle-bar"></span>
+                <span className="toggler-icon bottom-bar"></span>
               </button>
               <div
                 className="collapse navbar-collapse"
                 id="navbarSupportedContent"
               >
                 <ul className="col-md-5 nav navbar-nav mr-auto d-flex align-items-center justify-content-end">
-                  <li key={'logosmall'}>
-                    <a href="/" className="nav-logo-small">
-                      <img
-                        src={require('../images/logo.svg').default}
-                        className="logo_div"
-                        width="140"
-                        alt="skillojo"
-                      />
-                    </a>
-                  </li>
+                  <li key={'logosmall'}></li>
                   {navLeft.map(([text, linkTo], idx) => (
                     <li className="nav-item mx-2" key={idx}>
                       <Link className="nav-link" to={linkTo}>
@@ -57,7 +58,7 @@ const Navbar: React.FC<{}> = () => {
                       src={require('../images/logo.svg').default}
                       className="logo_div"
                       width="140"
-                      alt="skillojo"
+                      alt="steves"
                     />
                   </a>
                 </div>
