@@ -10898,6 +10898,105 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
+.menu-section img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+.menu-section .noborder {
+  padding: 1px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+.menu-section .blue-bg {
+  background-color: #3978bb;
+}
+.menu-section a {
+  text-decoration: none;
+  color: #1B86D2;
+  background-color: transparent;
+}
+.menu-section .dwld-menu-btn {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  color: #feffff;
+  text-align: left;
+  vertical-align: middle;
+  transform: rotate(0deg);
+  position: relative;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 120px;
+  font-family: "Pacifico", cursive;
+}
+.menu-section .dwld-menu-btn:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .footer-section .copyright {
   font-size: 0.6rem;
   font-weight: 400;

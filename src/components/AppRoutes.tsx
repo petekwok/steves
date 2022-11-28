@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from '../pages/Home';
+import Menu from '../pages/Menu';
 
 export const Path = {
   home: '/home',
@@ -13,6 +14,7 @@ const AppRoutes: React.FC<{}> = () => {
     <Routes>
       <Route path="*" element={<Navigate replace to={`${Path.home}`} />} />
       <Route path={`${Path.home}`} element={<Home />} />
+      <Route path={`${Path.menu}`} element={<Menu />} />
     </Routes>
   );
 };
