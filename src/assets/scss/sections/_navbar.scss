@@ -93,16 +93,7 @@ $time : 0.3s;
     transition: $time ease;
   }
 
-  .fa {
-    display: inline-block;
-    font: normal normal normal $base-font-size FontAwesome;
-    font-size: $base-font-size;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     .nav-logo-wide {
       display: none;
     }
@@ -112,7 +103,7 @@ $time : 0.3s;
     }
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .nav-logo-wide {
       display: block;
     }
@@ -143,5 +134,11 @@ $time : 0.3s;
   .nav-item:hover::after {
     transform: scaleX(1);
   }
+
+  // .navbar .navbar-nav {
+  //   display: inline-block;
+  //   float: none;
+  //   vertical-align: top;
+  // }
 
 }

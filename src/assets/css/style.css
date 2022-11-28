@@ -10840,15 +10840,7 @@ textarea.form-control-lg {
 .navbar-section .nav-link:hover {
   color: #263776;
 }
-.navbar-section .fa {
-  display: inline-block;
-  font: normal normal normal 0.8rem FontAwesome;
-  font-size: 0.8rem;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .navbar-section .nav-logo-wide {
     display: none;
   }
@@ -10856,7 +10848,7 @@ textarea.form-control-lg {
     display: block;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .navbar-section .nav-logo-wide {
     display: block;
   }
