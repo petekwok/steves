@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Path } from '../components/AppRoutes';
+import { Link } from 'react-router-dom';
 const Home: React.FC<{}> = () => {
   return (
     <>
@@ -30,12 +31,17 @@ const Home: React.FC<{}> = () => {
                       SATURDAY 16:30PM TO 21:00PM
                       <br />
                     </p>
-                    <h2>Click &amp; Collect</h2>
+                    <Link to={Path.clickCollect}>
+                      <h2>Click &amp; Collect</h2>
+                    </Link>
                     <p className="intro-text">
                       TUESDAY - FRIDAY 12:00PM TO 20:30PM
                       <br />
                       SATURDAY 16:30PM TO 21:00PM
                       <br />
+                    </p>
+                    <p className="intro-text tel">
+                      <a href="tel:019 0323 8837">019 0323 8837</a>
                     </p>
                   </div>
                 </div>

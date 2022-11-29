@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+.location-section {
+  $bgColor: #3978bb;
+
+  img {
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .noborder {
+    padding: 1px;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+  }
+
+  .blue-bg {
+    background-color: $bgColor;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #0021aa;
+  }
+
+  span {
+    font-family: 'Arvo', serif;
+    font-weight: 600;
+    display: block;
+    color: #333333;
+    font-size: small;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

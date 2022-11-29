@@ -10891,11 +10891,21 @@ textarea.form-control-lg {
   font-family: "Pacifico", cursive;
 }
 .home-section .img-fluid {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/banner.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.home-section a {
+  text-decoration: none;
+  color: #feffff;
+}
+.home-section a:hover {
+  color: #e31d12;
+}
+.home-section .tel {
+  font-size: 1.5rem;
 }
 
 .menu-section img {
@@ -10995,6 +11005,37 @@ textarea.form-control-lg {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+.location-section img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+.location-section .noborder {
+  padding: 1px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+.location-section .blue-bg {
+  background-color: #3978bb;
+}
+.location-section h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #0021aa;
+}
+.location-section span {
+  font-family: "Arvo", serif;
+  font-weight: 600;
+  display: block;
+  color: #333333;
+  font-size: small;
+}
+.location-section a {
+  text-decoration: none;
 }
 
 .footer-section .copyright {
