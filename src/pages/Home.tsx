@@ -9,7 +9,7 @@ const Home: React.FC<{}> = () => {
           <div className="img-fluid">
             <div className="container">
               <div className="row height align-items-center justify-content-center">
-                <div className="home-banner-content d-flex flex-column align-items-center justify-content-center">
+                <div className="home-banner-content d-flex flex-column align-items-center justify-content-center mt-3">
                   <div className="col-lg-10 d-flex flex-column align-items-center">
                     <h1
                       className="big-title fadeMe"
