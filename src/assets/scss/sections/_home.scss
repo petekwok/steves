@@ -37,6 +37,40 @@
     font-size: 1.5rem;
   }
 
+  img {
+    border: 0;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .deliver {
+
+
+    @media only screen and (max-width: 768px) {
+      .icondiv {
+        min-height: 14rem;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .icondiv {
+        min-height: 10rem;
+      }
+    }
+
+    h2 {
+      font-family: "Open Sans Condensed";
+    }
+
+    >a {
+
+      &:hover {
+        color: $white;
+      }
+
+    }
+  }
+
   // h1 {
   //   @media only screen and (min-width: 240px) and (max-width: 568px) {
   //     h1 {

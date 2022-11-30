@@ -10907,6 +10907,27 @@ textarea.form-control-lg {
 .home-section .tel {
   font-size: 1.5rem;
 }
+.home-section img {
+  border: 0;
+  max-width: 70%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .home-section .deliver .icondiv {
+    min-height: 14rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-section .deliver .icondiv {
+    min-height: 10rem;
+  }
+}
+.home-section .deliver h2 {
+  font-family: "Open Sans Condensed";
+}
+.home-section .deliver > a:hover {
+  color: #fff;
+}
 
 .menu-section img {
   vertical-align: middle;
