@@ -24,14 +24,14 @@
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    color: #0021aa;
+    color: $primary;
   }
 
   span {
     font-family: 'Arvo', serif;
     font-weight: 600;
     display: block;
-    color: #333333;
+    color: $secondary;
     font-size: small;
   }
 
