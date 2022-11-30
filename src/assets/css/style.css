@@ -11030,9 +11030,13 @@ textarea.form-control-lg {
 .location-section span {
   font-family: "Arvo", serif;
   font-weight: 600;
-  display: block;
   color: #7895a4;
   font-size: small;
+}
+.location-section span > div,
+.location-section span a {
+  white-space: nowrap;
+  overflow: hidden;
 }
 .location-section a {
   text-decoration: none;

@@ -30,9 +30,16 @@
   span {
     font-family: 'Arvo', serif;
     font-weight: 600;
-    display: block;
+    // display: block;
     color: $secondary;
     font-size: small;
+
+    >div,
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
   }
 
   a {
